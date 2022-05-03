@@ -1,0 +1,30 @@
+project:
+  name: greeting-cli
+  version: 0.0.1
+  description: Greeting application
+  longDescription: Greeting application
+  website: https://github.com/darinpope/greeting-cli
+  authors:
+    - Darin Pope
+  license: Apache-2
+  java:
+    groupId: com.planetpope
+    version: 17
+  extraProperties:
+    inceptionYear: 2022
+
+signing:
+  active: never
+  armored: true    
+
+release:
+  github:
+    overwrite: true
+    sign: false
+
+distributions:
+  greeting-cli:
+    type: NATIVE_IMAGE
+    artifacts:
+      - path: target/distributions/{{distributionName}}-{{projectVersion}}-{{osName}}-{{osArch}}.zip
+      - path: target/distributions/{{distributionName}}-{{projectVersion}}-{{osName}}-{{osArch}}.tar.gz

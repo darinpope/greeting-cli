@@ -40,3 +40,4 @@ nb-configuration.xml
 
 .dccache
 out/
+trace.log
