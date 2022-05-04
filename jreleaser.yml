@@ -1,6 +1,6 @@
 project:
   name: greeting-cli
-  version: 0.0.2
+  version: 0.0.1
   description: Greeting application
   longDescription: Greeting application
   website: https://github.com/darinpope/greeting-cli

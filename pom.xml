@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.planetpope</groupId>
   <artifactId>greeting-cli</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.1</version>
   <properties>
     <executable-suffix/>
     <distribution.directory>${project.build.directory}/distributions</distribution.directory>

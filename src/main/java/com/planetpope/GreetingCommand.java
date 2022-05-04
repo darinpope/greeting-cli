@@ -5,7 +5,7 @@ import picocli.CommandLine.Parameters;
 
 @Command(
   name = "greeting", 
-  version = "0.0.2",
+  version = "0.0.1",
   mixinStandardHelpOptions = true
 )
 public class GreetingCommand implements Runnable {
