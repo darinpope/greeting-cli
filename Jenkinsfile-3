@@ -34,7 +34,7 @@ pipeline {
           }
           stage('Stash') {
             steps {
-              stash(name:'stash-$PLATFORM',includes:'target/distributions/**/*.tar.gz,target/distributions/**/*.zip')
+              stash(name:"stash-$PLATFORM",includes:'target/distributions/**/*.tar.gz,target/distributions/**/*.zip')
             }
           }
         }
