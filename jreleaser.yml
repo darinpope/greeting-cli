@@ -22,6 +22,10 @@ release:
     overwrite: true
     sign: false
 
+packagers:
+  brew:
+    active: always
+
 distributions:
   greeting-cli:
     type: NATIVE_IMAGE
