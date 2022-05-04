@@ -22,9 +22,9 @@ release:
     overwrite: true
     sign: false
 
-#packagers:
-#  brew:
-#    active: always
+packagers:
+  brew:
+    active: always
 
 distributions:
   greeting-cli:
