@@ -32,9 +32,9 @@ pipeline {
               runCommand(script:'./mvnw package -Pdist')
             }
           }
-          stage('Release') {
+          stage('Archive') {
             steps {
-              runCommand(script:'jreleaser full-release')
+              archiveArtifacts(artifacts:'target/distributions/**/*.tar.gz,target/distributions/**/*.tar.gz')
             }
           }
         }
