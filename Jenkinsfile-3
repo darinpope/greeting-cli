@@ -34,7 +34,7 @@ pipeline {
           }
           stage('Archive') {
             steps {
-              archiveArtifacts(artifacts:'target/distributions/**/*.tar.gz,target/distributions/**/*.tar.gz')
+              archiveArtifacts(artifacts:'target/distributions/**/*.tar.gz,target/distributions/**/*.zip')
             }
           }
         }
