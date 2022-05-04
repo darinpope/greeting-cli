@@ -2,7 +2,7 @@
 pipeline {
   agent none
   stages {
-    stage('BuildAndTest') {
+    stage('Greeting') {
       matrix {
         agent {
           label "${PLATFORM}"
