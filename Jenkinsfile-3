@@ -1,6 +1,9 @@
 @Library('shared-library') _
 pipeline {
   agent none
+  environment {
+    JRELEASER_GITHUB_TOKEN=credentials('jreleaser-github-token')
+  }
   stages {
     stage('Greetubg') {
       matrix {
