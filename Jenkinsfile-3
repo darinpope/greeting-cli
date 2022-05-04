@@ -5,7 +5,7 @@ pipeline {
     JRELEASER_GITHUB_TOKEN=credentials('jreleaser-github-token')
   }
   stages {
-    stage('Greetubg') {
+    stage('Greeting') {
       matrix {
         agent {
           label "${PLATFORM}"
