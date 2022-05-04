@@ -32,12 +32,21 @@ pipeline {
               runCommand(script:'./mvnw package -Pdist')
             }
           }
-          stage('Archive') {
+          stage('Stash') {
             steps {
-              archiveArtifacts(artifacts:'target/distributions/**/*.tar.gz,target/distributions/**/*.zip')
+              stash(name:'stash-${PLATFORM}',includes:'target/distributions/**/*.tar.gz,target/distributions/**/*.zip')
             }
           }
         }
+      }
+    }
+    stage('Release') {
+      agent { label 'linux'}
+      steps {
+        unstash('stash-linux')
+        unstash('stash-macos')
+        unstash('stash-windows')
+        sh 'jreleaser full-release'
       }
     }
   }
