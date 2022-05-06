@@ -23,3 +23,7 @@ See the video at https://youtu.be/OIGAX6btNr4
 * [Installation on Linux Platforms](https://www.graalvm.org/22.1/docs/getting-started/linux/)
 * [Installation on macOS Platforms](https://www.graalvm.org/22.1/docs/getting-started/macos/)
 * [Installation on Windows Platforms](https://www.graalvm.org/22.1/docs/getting-started/windows/)
+
+### Shared Library step
+
+* [runCommand.groovy](https://github.com/darinpope/github-api-global-lib/blob/main/vars/runCommand.groovy)
